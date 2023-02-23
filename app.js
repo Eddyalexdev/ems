@@ -43,5 +43,5 @@ app.post('/email', (req, res) => {
 })
 
 
-app.listen(8001, () => console.log('app initializated in 8001'))
+app.listen(80, () => console.log('app initializated in 80'))
 
