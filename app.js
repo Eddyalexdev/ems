@@ -3,6 +3,8 @@ const nodemailer = require('nodemailer')
 const cors = require('cors')
 
 const app = express()
+const PORT = process.env.PORT || 3997
+
 
 app.use(cors())
 app.use(express.json())
@@ -43,5 +45,5 @@ app.post('/email', (req, res) => {
 })
 
 
-app.listen(80, () => console.log('app initializated in 80'))
+app.listen(PORT, () => console.log('app initializated in:' + PORT))
 
